@@ -21,27 +21,46 @@ const Projects = () => {
       <div className="flex flex-wrap my-20 gap-16">
         {projects.map((project) => (
           <div className="lg:w-[400px] w-full" key={project.name}>
-            <div className="block-container w-12 h-12">
-              <div className={`btn-back rounded-xl ${project.theme}`} />
-              <div className="btn-front rounded-xl flex justify-center items-center">
-                <img
-                  src={project.iconUrl}
-                  alt="Project Icon"
-                  className="w-1/2 h-1/2 object-contain"
-                />
+            <div className="flex flex-row">
+              <div className="block-container w-24 h-24">
+                <div className={`btn-back rounded-xl ${project.theme}`} />
+                <div className="btn-front rounded-xl flex justify-center items-center">
+                  <img
+                    src={project.iconUrl}
+                    alt="Project Icon"
+                    className="w-1/2 h-1/2 object-contain"
+                  />
+                </div>
               </div>
-            </div>
-            <div className="mt-5 flex flex-col">
-              <h4 className="text-2x; font-poppins font-semibold">
+
+              <h4 className="text-2xl ml-8 mt-7 font-poppins font-semibold">
                 {project.name}
               </h4>
-              <p className="mt-2 text-slate-500">{project.description}</p>
-              <div className="mt-5 flex items-center gap-2 font-poppins">
+            </div>
+
+            <div className="mt-2 flex flex-col">
+              <ul className="flex flex-wrap">
+                {project.techs.map((tech, index) => (
+                  <li
+                    className="mt-2 gap-2 block-container w-20 h-20"
+                    key={`project-tech-${index}`}
+                  >
+                    <img
+                      src={tech}
+                      alt="tech"
+                      className="w-1/2 h-1/2 object-contain border-2 rounded-md"
+                    />
+                  </li>
+                ))}
+              </ul>
+
+              <p className=" text-slate-500 h-32">{project.description}</p>
+              <div className="mt-2 flex items-center gap-2 font-poppins">
                 <Link
                   to={project.link}
                   target="_blank"
                   rel="noopener no referrer"
-                  className="font-semibold text-blue-600"
+                  className="font-semibold text-blue-600 "
                 >
                   Live Link
                 </Link>

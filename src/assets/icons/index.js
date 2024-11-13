@@ -31,6 +31,7 @@ import shopsuey from "./shopsuey.png";
 import stictactoe from "./stictactoe.png";
 import threejs from "./threejs.svg";
 import itms from "./itms.png";
+import vite from "./vite.svg";
 
 export {
   css,
@@ -66,4 +67,5 @@ export {
   stictactoe,
   threejs,
   itms,
+  vite,
 };

@@ -29,6 +29,7 @@ import {
   stictactoe,
   threejs,
   itms,
+  vite,
 } from "../assets/icons";
 
 export const skills = [
@@ -264,6 +265,7 @@ export const projects = [
     iconUrl: shopsuey,
     theme: "btn-back-green",
     name: "Shopsuey",
+    techs: [vite, react, tailwindcss],
     description:
       "Developed a website called 'Shopsuey.' An e-commerce platform that offers a smooth and user-friendly online buying experience.",
     link: "https://shop-suey.vercel.app/",
@@ -273,6 +275,7 @@ export const projects = [
     iconUrl: mongodb,
     theme: "btn-back-green",
     name: "M.O.T.U.L backend",
+    techs: [nodejs, express, mongodb],
     description:
       "The backend is designed to provide a robust and scalable foundation for managing a web application. API endpoints are optimized for smooth communication between the frontend and backend ",
     link: "https://motul-backend.vercel.app/",
@@ -281,6 +284,7 @@ export const projects = [
     iconUrl: fortunecodies,
     theme: "btn-back-red",
     name: "Fortune Codies",
+    techs: [vite, react, tailwindcss],
     description:
       "Developed a simple website called 'Fortune Codies.' This project generates quotes to help you live a better life (in programming) :)",
     link: "https://fortune-codies.vercel.app",
@@ -289,6 +293,7 @@ export const projects = [
     iconUrl: stictactoe,
     theme: "btn-back-black",
     name: "Super Tic Tac Toe",
+    techs: [vite, react, tailwindcss],
     description:
       "Developed a web application called 'Super Tic-Tac-Toe.' A browser-based application for playing Ultimate Tic Tac Toe with friends. React + Vite and Tailwind CSS are used in the project's development.",
     link: "https://s-tic-tac-toe.vercel.app/",
